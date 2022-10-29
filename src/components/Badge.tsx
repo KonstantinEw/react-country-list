@@ -1,5 +1,3 @@
-
-import { Fragment } from "react"
 import { Color } from "../types"
 
 interface Ibadge {
