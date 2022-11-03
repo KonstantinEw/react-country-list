@@ -5,7 +5,7 @@ import { ICountry } from './types';
 
 
 
-function App() {
+const App = () => {
   const transformCountries: ICountry[] = countries.map(country => {
     return {
       name: country.name.common,

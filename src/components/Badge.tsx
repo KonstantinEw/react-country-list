@@ -1,15 +1,13 @@
-import { Color } from "../types"
+import { BadgeLable, Color } from "../types"
 
-interface Ibadge {
-    population: number,
-    area: number,
+interface IBadge {
+    lable: BadgeLable,
+    count: number,
+    color: Color,
 }
 
-export const Badge = ({ area, population }: Ibadge) => {
+export const Badge = ({ lable, count, color }: IBadge) => {
     return (
-        <>
-            <span className={`badge text-bg-${Color.Primary} `}>{`area: ${area}`}</span>
-            <span className={`badge text-bg-${Color.Dark}`}>{`population: ${population}`}</span>
-        </>
+        <span className={`badge bg-${color}`}>{lable}:{count}</span>
     )
 }

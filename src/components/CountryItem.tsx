@@ -1,4 +1,4 @@
-import { ICountry } from "../types"
+import { Color, ICountry } from "../types"
 import { Badge } from "./Badge"
 
 
@@ -8,6 +8,7 @@ export const CountryItem = ({ name, flag, population, area, capital, region }: I
         <p>{`${name}`}</p>
         <p>{`${capital}`}</p>
         <p>{`${region}`}</p>
-        <Badge area={area} population={population} />
+        <Badge lable='area' count={area} color={Color.Primary} />
+        <Badge lable='population' count={population} color={Color.Secondary} />
     </li>)
 }
