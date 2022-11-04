@@ -1,4 +1,6 @@
-import { BadgeLable, Color } from "../types"
+import { BadgeLable } from "../types/BadgeLable"
+import { Color } from "../types/Colors"
+
 
 interface IBadge {
     lable: BadgeLable,

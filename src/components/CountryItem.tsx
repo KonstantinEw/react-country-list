@@ -1,4 +1,5 @@
-import { Color, ICountry } from "../types"
+import { ICountry } from "../types"
+import { Color } from "../types/Colors"
 import { Badge } from "./Badge"
 
 

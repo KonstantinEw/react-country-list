@@ -7,7 +7,7 @@ interface ICountriesList {
 
 export const CountryList = ({ countries }: ICountriesList) => {
     const transformCountryItems = countries.map(country => {
-        return (<CountryItem
+        return (<CountryItem key={country.name}
             {...country}
         />)
     })
