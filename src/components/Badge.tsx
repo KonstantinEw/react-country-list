@@ -1,15 +1,13 @@
-import { BadgeLable } from "../types/BadgeLable"
-import { Color } from "../types/Colors"
-
-
+import { BadgeLabel } from "../types/badgeLabel"
+import { Color } from "../types/colors"
 interface IBadge {
-    lable: BadgeLable,
+    label: BadgeLabel,
     count: number,
     color: Color,
 }
 
-export const Badge = ({ lable, count, color }: IBadge) => {
+export const Badge = ({ label, count, color }: IBadge) => {
     return (
-        <span className={`badge bg-${color}`}>{lable}:{count}</span>
+        <span className={`badge bg-${color}`}>{label}:{count}</span>
     )
 }
